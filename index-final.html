@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Image Vault - Epic Anime Collection</title>
+    <meta name="description" content="Discover stunning artwork and imagery from your favorite anime series. A curated collection of high-quality anime art and promotional images.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5,3 19,12 5,21"></polygon>
+                        </svg>
+                    </div>
+                    <h1 class="site-title">Anime Image Vault</h1>
+                </div>
+                
+                <nav class="nav-desktop">
+                    <button onclick="scrollToSection('naruto')" class="nav-link">Naruto</button>
+                    <button onclick="scrollToSection('demon-slayer')" class="nav-link">Demon Slayer</button>
+                    <button onclick="scrollToSection('jujutsu-kaisen')" class="nav-link">Jujutsu Kaisen</button>
+                    <button onclick="scrollToSection('attack-on-titan')" class="nav-link">Attack on Titan</button>
+                </nav>
+                
+                <div class="mobile-menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Epic Anime</h2>
+                <p class="hero-subtitle">Image Collection</p>
+                <p class="hero-description">
+                    Discover stunning artwork and imagery from your favorite anime series. A curated collection 
+                    of high-quality anime art and promotional images.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('naruto')" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <polygon points="5,3 19,12 5,21"></polygon>
+                        </svg>
+                        Explore Collection
+                    </button>
+                    <button class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12,16 L12,8"></path>
+                            <path d="M8,12 L16,12"></path>
+                        </svg>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        <div class="floating-element floating-3"></div>
+    </section>
+
+    <!-- Naruto Section -->
+    <section id="naruto" class="anime-section naruto-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="section-icon">
+                        <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"></polygon>
+                    </svg>
+                    Naruto
+                </h3>
+                <p class="section-description">Legendary ninja techniques and bonds of friendship</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-container">
+                        <img src="naruto.jpg" alt="Naruto Complete Series" class="anime-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="download-btn-top" onclick="downloadImage('naruto.jpg', 'naruto_complete_series.jpg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">Naruto Complete Series</h4>
+                        <button class="btn btn-download" onclick="downloadImage('naruto.jpg', 'naruto_complete_series.jpg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demon Slayer Section -->
+    <section id="demon-slayer" class="anime-section demon-slayer-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="section-icon">
+                        <path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path>
+                        <line x1="16" y1="8" x2="2" y2="22"></line>
+                        <line x1="17.5" y1="15" x2="9" y2="15"></line>
+                    </svg>
+                    Demon Slayer
+                </h3>
+                <p class="section-description">Breathtaking sword fighting and emotional moments</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-container">
+                        <img src="demon-slayer.jpg" alt="Demon Slayer" class="anime-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="download-btn-top" onclick="downloadImage('demon-slayer.jpg', 'demon_slayer.jpg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">Demon Slayer</h4>
+                        <button class="btn btn-download" onclick="downloadImage('demon-slayer.jpg', 'demon_slayer.jpg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jujutsu Kaisen Section -->
+    <section id="jujutsu-kaisen" class="anime-section jujutsu-kaisen-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="section-icon">
+                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"></polygon>
+                    </svg>
+                    Jujutsu Kaisen
+                </h3>
+                <p class="section-description">Cursed energy and supernatural battles</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-container">
+                        <img src="jujutsu-kaisen.jpg" alt="Jujutsu Kaisen" class="anime-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="download-btn-top" onclick="downloadImage('jujutsu-kaisen.jpg', 'jujutsu_kaisen.jpg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">Jujutsu Kaisen</h4>
+                        <button class="btn btn-download" onclick="downloadImage('jujutsu-kaisen.jpg', 'jujutsu_kaisen.jpg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attack on Titan Section -->
+    <section id="attack-on-titan" class="anime-section attack-on-titan-bg">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="section-title">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor" class="section-icon">
+                        <path d="M12,22 C6.477,22 2,17.523 2,12 C2,6.477 6.477,2 12,2 C17.523,2 22,6.477 22,12 C22,17.523 17.523,22 12,22 Z"></path>
+                        <path d="M8,12 L16,12"></path>
+                        <path d="M12,8 L12,16"></path>
+                    </svg>
+                    Attack on Titan
+                </h3>
+                <p class="section-description">Humanity's fight for survival against titans</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <div class="image-container">
+                        <img src="attack-on-titan.jpg" alt="Attack on Titan" class="anime-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                    <div class="download-btn-top" onclick="downloadImage('attack-on-titan.jpg', 'attack_on_titan.jpg')">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </div>
+                    <div class="image-info">
+                        <h4 class="image-title">Attack on Titan</h4>
+                        <button class="btn btn-download" onclick="downloadImage('attack-on-titan.jpg', 'attack_on_titan.jpg')">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7,10 12,15 17,10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download Image
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5,3 19,12 5,21"></polygon>
+                        </svg>
+                    </div>
+                    <span class="footer-title">Anime Image Vault</span>
+                </div>
+                
+                <nav class="footer-nav">
+                    <a href="#about" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12,16 L12,8"></path>
+                            <path d="M8,12 L16,12"></path>
+                        </svg>
+                        About
+                    </a>
+                    <a href="#contact" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contact
+                    </a>
+                    <a href="#instagram" class="footer-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Instagram
+                    </a>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Anime Image Vault. Portfolio demonstration project. All rights reserved.
+                </p>
+                <p class="footer-note">
+                    This is a static portfolio showcase - displaying anime artwork and promotional images.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
